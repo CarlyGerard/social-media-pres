@@ -2,12 +2,13 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<title>reveal.js</title>
+		<title>Social Media and Accessibility</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/customize.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -24,8 +25,111 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>
+					<h1>Social Media and Accessibility</h1>
+					<p>Carly Gerard<br>
+						Web Accessibility Developer, WebTech<br></p>
+						<img src="images/social-media-world.png" alt="various social media icons circling a globe">
+				</section>
+				<section>
+					<section id="slide2" aria-labelledby="slide2"><h2>Why do we post/tweet/Insta? <span aria-label="thinking face">🤔</span></h2></section>
+					<section aria-labelledby="slide2-1" id="slide2-1"><blockquote>"Social networking is the same thing we’ve been doing for more than a century here at Western: engaging with our communities."&mdash;<a href="https://www.wwu.edu/social-media-guidelines">Western Social Media Guidelines</a></blockquote></section>
+				</section>
+			</section>
+				<section id="slide3" class="uppercase" aria-labelledby="slide3">
+					<h2>But what about...</h2>
+					<ul>
+						<li>your users with visual disabilities?</li>
+						<li>your users in a noisy restaurant, trying to share a video with friends?</li>
+						<li>your users with cognitive, learning, or reading disabilities?</li>
+					</ul>
+				</section>
+				<section id="slide" aria-labelledby="slide"><h2>What Makes Good Alt Text?</h2>
+					<p>Generally speaking:</p>
+					<ul>
+						<li>Alt text succinctly describes what is happening in the image</li>
+						<li>If it's an image of text, place the image text in the alt text</li>
+						<li>Most important information is at the beginning of alt text</li>
+					</ul>
+					<p><a href="https://www.w3.org/WAI/tutorials/images/decision-tree/">WAI Alt Text Decision Tree</a></p>
+				</section>
+				<section id="slide" aria-labelledby="slide"><h2 class="visually-hidden">Why You Need Alt Text</h2>
+					<div class="image-block">
+					<div><img alt="tweet with image attached about financial aid office hours " src="images/twitter-1.png"></div>
+					<div><img alt="browser inspector tools highlighting image with no alt text" src="images/twitter-2.png"></div>
+				</div>
+				</section>
+				<section id="slide4" aria-labelledby="slide4">
+					<h2>Accessible Images</h2>
+					<p>Facebook and Twitter have supported alt text for a while. Now Instagram does too! <span aria-label="thumbs up">👍</span></p>
+				</section>
+				<section id="slide5" aria-labelledby="slide5">
+					<h2>Adding Alt Text</h2>
+					<div class="grid-container-images">
+					<h3 class="facebook">Facebook</h3>
+					<ol>    <li>Click Photo/Video at the top of your News Feed.</li>
+    <li>Select the photo you want to add.</li>
+    <li>Click Edit Photo, then click Alt Text.</li>
+    <li>The automatically generated text will be shown on the left side of your photo. Click Override generated alt text to edit it.</li>
+    <li>Write your alt text in the box. To change back to the automatically generated text, click Clear.</li>
+    <li>To save your alt text, click Save in the bottom right.</li> </ol>
+					<h3 class="twitter">Twitter</h3>
+					<ol><li>Click on the Tweet compose button, or press the “n” key to use the keyboard shortcut.</li>
+    <li>Attach your photo(s).</li>
+    <li>To insert descriptive text, open the thumbnail preview dialog by clicking on the thumbnail.</li>
+    <li>Type your description of the image and click the Apply button. To edit the description, re-open the thumbnail preview dialog prior to posting the Tweet. (The limit is 420 characters.)</li>
+    <li>You can add a description to each image in a Tweet.
+    Note: Image descriptions cannot be added to GIFs or videos.</li></ol>
+					<h3 class="instagram">Instagram</h3>
+					<ol>    <li>Start by taking a photo or uploading an existing photo to Instagram.</li>
+    <li>Choose a filter and edit the image, then tap Next.</li>
+    <li>Tap Advanced Settings at the bottom of the screen.</li>
+    <li>Tap Write Alt Text.</li>
+    <li>Write your alt text in the box and tap Done (iOS) or Save (Android).</li></ol>
+				</section>
+				<section id="slide" aria-labelledby="slide"><h2>Adding Alt Text (Continued)</h2>
+					<p>Alt Text Resources</p>
+					<ul>
+						<li><a href="https://www.facebook.com/help/214124458607871">Facebook Help Center: Add alt text to photos</a></li>
+						<li><a href="https://help.twitter.com/en/using-twitter/picture-descriptions">Twitter: make images accessible for people</a></li>
+						<li><a href="https://help.instagram.com/503708446705527">Instagram Help Center: Edit Alt Text</a></li>
+					</ul>
+				</section>
+				<section id="slide" aria-labelledby="slide"><h2>Hootsuite and Alt Text</h2>
+					<div style="transform: scale(.9);"><img src="images/hootsuite.jpg" alt="instructions on including alt text in Hootsuite"></div>
+					<p style="margin-top: -2%;"><a href="https://help.hootsuite.com/hc/en-us/articles/204586000-Attach-images-to-messages#3">Adding alt text to images in Twitter</a></p>
+				</section>
+				<section id="slide" aria-labelledby="slide"><h2>Some Current Hootsuite Pitfalls</h2>
+					<ul>
+						<li>Hootsuite has the same 420 character limit for alt text</li>
+						<li>Only works in the new Composer/New Post feature</li>
+						<li>No alt text support in mobile Hootsuite apps</li>
+						<li>Also no documentation on alt text support for Facebook/Instagram?</li>
+					</ul>
+					<p><a href="https://www.lireo.com/part-4-alternative-text-for-images-hootsuite-announces-support/">Lireo Designs: Alt Text Support in Hootsuite</a></p>
+				</section>
+				<section id="slide" aria-labelledby="slide"><h2>Videos</h2>
+					<ul>
+						<li>Twitter and Instagram require open captions (burned into file) to have captions<ul><li>Otherwise, link to another version on a platform where closed captions are provided</li></ul></li>
+						<li>Facebook supports closed captioning. <a href="https://www.facebook.com/help/261764017354370">Facebook Help Center: Add or Remove Captions</a></li>
+						<li>3Play offers Facebook SRT files to upload into Facebook</li>
+					</ul>
+				</section>
+				<section id="slide" aria-labelledby="slide"><h2>Videos (Continued)</h2>
+					<h3>Audio Description</h3>
+					<video controls>
+						<source src="images/make-waves.mov" type="video/mp4">
+					</video>
+				</section>
+				<section id="slide" aria-labelledby="slide">
+					<h2>Other Important Considerations</h2>
+					<ul>
+						<li>Provide contact info to key points of contact on each profile so users have an alternate way to reach out</li>
+						<li>Post same info to multiple outlets&mdash;repeat content for various user populations.</li>
+						<li></li>
+					</ul>
+				</section>
+				<section id="slide" aria-labelledby="slide">https://www.lireo.com/part-4-alternative-text-for-images-hootsuite-announces-support/ https://www.levelaccess.com/accessible-social-media/ https://app.prezentt.com/presentations/1490/public/</section>
 			</div>
 		</div>
 

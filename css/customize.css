@@ -1,0 +1,85 @@
+/*********************************************
+ * CUSTOM STYLES
+ *********************************************/
+
+ .visually-hidden {
+   clip: rect(1px 1px 1px 1px);
+   clip: rect(1px, 1px, 1px, 1px);
+   position: absolute;
+   overflow: hidden;
+   height: 1px;
+   width: 1px;
+ }
+
+ .reveal h1 {
+   font-size: 1.5em;
+ }
+
+ .reveal img {
+   max-width: 60%;
+ }
+
+.reveal a {
+  text-decoration: underline;
+  color: #63c2ff;
+}
+
+.reveal a {
+  border: 3px solid transparent;
+}
+.reveal a:hover, .reveal a:focus, .reveal a:active {
+  outline: unset;
+  border: 3px dotted #63c2ff;
+}
+
+.reveal .uppercase {
+  text-transform: uppercase;
+}
+
+.grid-container-images {
+  display: grid;
+  grid-template-columns: repeat(3, 400px);
+  width: 100%;
+  grid-column-gap: 5%;
+}
+
+.grid-container-images .instagram {
+  order: 3;
+  background-image: url();
+}
+
+.grid-container-images .facebook {
+  order: 1;
+}
+.grid-container-images .twitter {
+  order: 2;
+}
+
+.grid-container-images ol {
+  font-size: .5em;
+  grid-row-start: 2;
+}
+
+
+
+@media (min-width: 750px) {
+  .reveal .grid-container-images {
+    margin-left: -20%;
+  }
+
+  .reveal .image-block {
+    display: flex;
+    width: 100%;
+    flex-flow: column nowrap;
+    margin-top: -4%;
+  }
+
+  .image-block img[src="images/twitter-1.png"] {
+    transform: scale(.7);
+  }
+
+  .image-block img[src="images/twitter-2.png"] {
+    transform: scale(1.5);
+    margin-top: -3%;
+  }
+}
